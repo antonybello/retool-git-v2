@@ -7,7 +7,7 @@ services:
       - SERVICE_TYPE=MAIN_BACKEND,DB_CONNECTOR
       - COOKIE_INSECURE=true # Disables secure cookies
       - APPS_FS_SYNC_ON=true # Enables syncing to filesystem
-      - APPS_FS_SYNC_PROTECTED_BRANCHES=master # Protects the master branch
+      - APPS_FS_SYNC_PROTECTED_BRANCHES=dev # Protects the master branch
     networks:
       - retool-network
     depends_on:
